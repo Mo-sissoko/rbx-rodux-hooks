@@ -34,7 +34,7 @@ local function MyComponent()
     return e("TextLabel", {
         AnchorPoint = Vector2.new(0.5, 0.5),
         Position = UDim2.fromScale(0.5, 0.5),
-        Size = UDim2.fromScale(200, 100),
+        Size = UDim2.fromOffset(200, 100),
         Text = `Count: {counter}`,
     })
 end

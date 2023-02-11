@@ -1,9 +1,6 @@
 {
   "name": "rodux-hooks",
   "tree": {
-    "$path": "Packages",
-    "RoduxHooks": {
-      "$path": "src"
-    }
+    "$path": "src"
   }
 }
