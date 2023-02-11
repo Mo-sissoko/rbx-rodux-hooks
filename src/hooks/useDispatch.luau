@@ -4,11 +4,11 @@ local useStore = require(script.Parent.useStore)
 local useCallback = Roact.useCallback
 
 return function()
-	local store = useStore()
+    local store = useStore()
 
-	local dispatch = useCallback(function(action)
-		store:dispatch(action)
-	end, { store })
+    local dispatch = useCallback(function(action)
+        store:dispatch(action)
+    end, { store })
 
-	return dispatch
+    return dispatch
 end

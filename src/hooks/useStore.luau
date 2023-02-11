@@ -4,5 +4,5 @@ local Context = require(script.Parent.Parent.Context)
 local useContext = Roact.useContext
 
 return function()
-	return useContext(Context)
+    return useContext(Context)
 end
