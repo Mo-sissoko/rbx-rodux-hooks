@@ -24,7 +24,16 @@ useSelector<S, T>(selector: (S) -> T, equalityFn: ((T, T) -> boolean)?): T
 useDispatch(): (action: AnyAction) -> ()
 ```
 
-## Example
+## Examples
+```lua
+local root = e(RoduxHooks.Provider, {
+    store = store,
+}, {
+    app = e(App),
+})
+
+Roact.mount(root, player.PlayerGui, "Main")
+```
 ```lua
 local function MyComponent()
     local counter = useSelector(function(state: store.State)
