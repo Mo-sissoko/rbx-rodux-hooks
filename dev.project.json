@@ -1,8 +1,8 @@
 {
-    "name": "dev-roact-hooks",
+    "name": "dev-rodux-hooks",
     "tree": {
-        "$path": "Packages",
-        "RoactHooks": {
+        "$path": "packages",
+        "RoduxHooks": {
             "$path": "src"
         }
     }
