@@ -1,5 +1,5 @@
 {
-  "name": "rbx-rodux-hooks",
+  "name": "rodux-hooks",
   "tree": {
     "$path": "Packages",
     "RoduxHooks": {
