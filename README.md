@@ -39,3 +39,9 @@ local function MyComponent()
     })
 end
 ```
+
+## Contributing
+In order to get proper completion, use `dev.project.json` to build `sourcemap.json`
+```
+rojo sourcemap dev.project.json --output sourcemap.json
+```

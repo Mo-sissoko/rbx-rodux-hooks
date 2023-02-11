@@ -1,0 +1,9 @@
+{
+    "name": "dev-roact-hooks",
+    "tree": {
+        "$path": "Packages",
+        "RoactHooks": {
+            "$path": "src"
+        }
+    }
+}

@@ -1,8 +1,13 @@
 [package]
 name = "lopi-py/rodux-hooks"
-version = "0.1.0"
+description = "Rodux hooks made for Roact17"
+authors = ["Lopy"]
+version = "0.1.8"
 registry = "https://github.com/upliftgames/wally-index"
 realm = "shared"
+license = "MIT"
+include = ["wally.toml", "default.project.json", "src", "src/**"]
+exclude = ["**"]
 
 [dependencies]
 Roact = "core-packages/roact-compat@17.0.1-rc.16.1"
