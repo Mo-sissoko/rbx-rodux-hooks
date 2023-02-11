@@ -2,7 +2,7 @@
 name = "lopi-py/rodux-hooks"
 description = "Rodux hooks made for Roact17"
 authors = ["Lopy"]
-version = "0.1.8"
+version = "0.1.9"
 registry = "https://github.com/upliftgames/wally-index"
 realm = "shared"
 license = "MIT"
