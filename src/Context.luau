@@ -1,0 +1,4 @@
+--!strict
+local Roact = require(script.Parent.Parent.Roact)
+
+return Roact.createContext(nil)

@@ -1,0 +1,6 @@
+*.rbxlx
+*.rxbl
+*.lock
+*.tar
+sourcemap.json
+packages
