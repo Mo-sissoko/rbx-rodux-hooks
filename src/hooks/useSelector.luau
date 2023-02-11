@@ -9,9 +9,11 @@ local function defaultIsEqual<T>(a: T, b: T): boolean
     return a == b
 end
 
-return function<S, T>(selector: (S) -> T, equalityFn: ((T, T) -> boolean)?): T
+type EqualityFn<T> = typeof(defaultIsEqual)
+
+return function<S, T>(selector: (S) -> T, equalityFn: EqualityFn<T>?): T
     local store = useStore()
-    local isEqual = equalityFn or defaultIsEqual
+    local isEqual: EqualityFn<T> = equalityFn or defaultIsEqual
 
     local selectedState, setSelectedState = useState(function()
         return selector(store:getState())
@@ -23,7 +25,7 @@ return function<S, T>(selector: (S) -> T, equalityFn: ((T, T) -> boolean)?): T
         local function onStateChanged(newState)
             local newSelectedState = selector(newState)
 
-            if not isEqual(newSelectedState, oldSelectedState.current) then
+            if not isEqual(newSelectedState, oldSelectedState.current :: T) then
                 oldSelectedState.current = newSelectedState
                 setSelectedState(newSelectedState)
             end
