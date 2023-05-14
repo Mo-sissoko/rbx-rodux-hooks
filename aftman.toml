@@ -1,4 +1,4 @@
 [tools]
 wally = "upliftgames/wally@0.3.1"
 rojo = "rojo-rbx/rojo@7.2.1"
-stylua = "johnnymorganz/stylua@0.16.1"
+stylua = "johnnymorganz/stylua@0.17.1"
