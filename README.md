@@ -1,5 +1,5 @@
 # Rodux Hooks
-This project takes inspiration from [solarhorizon/rodux-hooks](https://github.com/solarhorizon/rodux-hooks) in order to make it work with [Roact17](https://github.com/grilme99/corepackages#roact17).
+This project takes inspiration from [solarhorizon/rodux-hooks](https://github.com/solarhorizon/rodux-hooks) in order to make it work with [React](https://github.com/jsdotlua/react-lua).
 
 ## Setup
 ```lua
@@ -32,7 +32,8 @@ local root = e(RoduxHooks.Provider, {
     app = e(App),
 })
 
-Roact.mount(root, player.PlayerGui, "Main")
+local root = ReactRoblox.createRoot(Instance.new("Folder"))
+root:render(ReactRoblox.createPortal(root, playerGui))
 ```
 ```lua
 local function MyComponent()
