@@ -10,4 +10,4 @@ include = ["wally.toml", "default.project.json", "src", "src/**"]
 exclude = ["**"]
 
 [dependencies]
-Roact = "core-packages/react@17.0.1-rc.19"
+React = "core-packages/react@17.0.1-rc.19"

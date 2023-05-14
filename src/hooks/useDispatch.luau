@@ -1,7 +1,7 @@
-local Roact = require(script.Parent.Parent.Parent.Roact)
+local React = require(script.Parent.Parent.Parent.React)
 local useStore = require(script.Parent.useStore)
 
-local useCallback = Roact.useCallback
+local useCallback = React.useCallback
 
 return function()
     local store = useStore()

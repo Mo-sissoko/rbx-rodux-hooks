@@ -1,3 +1,3 @@
-local Roact = require(script.Parent.Parent.Roact)
+local React = require(script.Parent.Parent.React)
 
-return Roact.createContext(nil)
+return React.createContext(nil)

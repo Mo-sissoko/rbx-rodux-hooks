@@ -1,9 +1,9 @@
-local Roact = require(script.Parent.Parent.Parent.Roact)
+local React = require(script.Parent.Parent.Parent.React)
 local useStore = require(script.Parent.useStore)
 
-local useState = Roact.useState
-local useEffect = Roact.useEffect
-local useRef = Roact.useRef
+local useState = React.useState
+local useEffect = React.useEffect
+local useRef = React.useRef
 
 local function defaultIsEqual<T>(a: T, b: T): boolean
     return a == b

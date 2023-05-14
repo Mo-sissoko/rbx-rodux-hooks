@@ -1,12 +1,12 @@
-local Roact = require(script.Parent.Parent.Roact)
 local Context = require(script.Parent.Context)
+local React = require(script.Parent.Parent.React)
 
 type Props = {
     store: unknown,
 }
 
 return function(props: Props)
-    return Roact.createElement(Context.Provider, {
+    return React.createElement(Context.Provider, {
         value = props.store,
-    }, props[Roact.Children])
+    }, props[React.Children])
 end
