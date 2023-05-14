@@ -1,8 +1,8 @@
 [package]
 name = "lopi-py/rodux-hooks"
-description = "Rodux hooks for Roact17"
+description = "React hooks for Rodux"
 authors = ["Lopy"]
-version = "0.1.13"
+version = "0.2.13"
 registry = "https://github.com/upliftgames/wally-index"
 realm = "shared"
 license = "MIT"
