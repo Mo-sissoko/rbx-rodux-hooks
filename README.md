@@ -26,14 +26,14 @@ useDispatch(): (action: AnyAction) -> ()
 
 ## Examples
 ```lua
-local root = e(RoduxHooks.Provider, {
+local app = e(RoduxHooks.Provider, {
     store = store,
 }, {
     app = e(App),
 })
 
 local root = ReactRoblox.createRoot(Instance.new("Folder"))
-root:render(ReactRoblox.createPortal(root, playerGui))
+root:render(ReactRoblox.createPortal(app, playerGui))
 ```
 ```lua
 local function MyComponent()
